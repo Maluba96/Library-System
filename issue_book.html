@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Issue Book</title>
+    <style>
+      .vertical-menu {
+        width: 200px; /* Set a width if you like */
+      }
+
+      .vertical-menu a {
+        background-color: #eee; /* Grey background color */
+        color: black; /* Black text color */
+        display: block; /* Make the links appear below each other */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove underline from links */
+      }
+      .vertical-menu a:hover {
+        background-color: #ccc; /* Dark grey background on mouse-over */
+      }
+
+    .vertical-menu a.active {
+        background-color: violet; /* Add a violet color to the "active/current" link */
+        color: white;
+      }
+      .vertical {
+            border-right: 1px solid black;
+            height: 1200px;
+        }
+        #parent {
+
+        }
+        #left{
+          <!-- width: 15%;
+          height: 1200px;
+          background: white;
+          float: left; -->
+        }
+        #right{
+          margin-left: 15%;
+          height: 1200px;
+          background: white;
+          padding-left: 15px;
+          text-align: center;
+        }
+        h1{
+          text-align: center;
+          padding-top: 95px;
+        }
+        input{
+          width: 300px;
+          height: 35px;
+        }
+        select{
+          width: 300px;
+          height: 35px;
+        .btn{
+          text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h5 style="font-size: 11px">LIBRARY MANAGEMENT SYSTEM</h5>
+    <!-- <h5 style="font-size: 11px; float: right;">person@mail.com</h5> -->
+    <hr>
+    <div class="vertical-menu vertical" id= "left">
+      <a href="#">Dashboard</a><br>
+      <a href="#">Books</a><br>
+      <a href="#">Categories</a><br>
+      <a href="#">Members</a><br>
+      <a href="#" class="active">Book Issue</a><br>
+      <a href="#">My Book List</a><br>
+    </div>
+    <div id="right">
+      <h1>Issue Book</h1>
+      <select>
+        <option value="ChooseBook">Choose Book</option>
+      </select>
+      <br><br>
+      <select>
+        <option value="ChooseHolder">Choose Holder</option>
+      </select>
+      <br><br>
+        <div class="form-group">
+          <label for="returndate">Return Date</label>
+          <br>
+          <input type="date" class="form-control" id="returndate" placeholder="" size="25">
+        </div>
+      <br><br>
+      <button type="submit">SUBMIT</button>
+      </div>
+    </body>
+  </html>

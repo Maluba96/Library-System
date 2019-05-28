@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <style>
+      .vertical-menu {
+        width: 200px; /* Set a width if you like */
+      }
+
+      .vertical-menu a {
+        background-color: #eee; /* Grey background color */
+        color: black; /* Black text color */
+        display: block; /* Make the links appear below each other */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove underline from links */
+      }
+      .vertical-menu a:hover {
+        background-color: #ccc; /* Dark grey background on mouse-over */
+      }
+
+    .vertical-menu a.active {
+        background-color: violet; /* Add a violet color to the "active/current" link */
+        color: white;
+      }
+      .vertical {
+            border-right: 1px solid black;
+            height: 1200px;
+        }
+        #parent {
+
+        }
+        #left{
+          width: 15%;
+          height: 1200px;
+          background: white;
+          float: left;
+        }
+        #right{
+          margin-left: 20px;
+          height: 1200px;
+          background: white;
+          padding-left: 15px;
+        }
+        .card-body{
+          margin: 10px;
+          border-color: black;
+          border-width: 2.7px;
+          border-style: solid;
+          padding: 50px;
+          margin: 5px 0px 35px 35px;
+        }
+        .card{
+          height: 250px;
+          display: flex;
+        }
+    </style>
+  </head>
+  <body>
+    <h5 style="font-size: 11px">LIBRARY MANAGEMENT SYSTEM</h5>
+    <!-- <h5 style="font-size: 11px; float: right;">person@mail.com</h5> -->
+    <hr>
+    <div class="vertical-menu vertical" id= "left">
+      <a href="#" class="active">Dashboard</a><br>
+      <a href="#">Books</a><br>
+      <a href="#">Categories</a><br>
+      <a href="#">Members</a><br>
+      <a href="#">Book Issue</a><br>
+      <a href="#">My Book List</a><br>
+    </div>
+    <div id= "right">
+      <div class="card" style="width: 18rem;">
+  <!-- <img src="..." class="card-img-top" alt="..."> -->
+  <div class="card-body">
+    <h5 class="card-title">Logged in User</h5>
+    <p class="card-text">0</p>
+  </div>
+
+  <div class="card" style="width: 38rem;">
+<!-- <img src="..." class="card-img-top" alt="..."> -->
+<div class="card-body">
+<h5 class="card-title">Total Book Number</h5>
+<p class="card-text">0</p>
+</div>
+
+<div class="card" style="width: 38rem;">
+<!-- <img src="..." class="card-img-top" alt="..."> -->
+<div class="card-body">
+<h5 class="card-title">Total Members</h5>
+<p class="card-text">0</p>
+</div>
+
+<div class="card" style="width: 28rem;">
+<!-- <img src="..." class="card-img-top" alt="..."> -->
+<div class="card-body">
+<h5 class="card-title">Non-Return Books</h5>
+<p class="card-text">0</p>
+</div>
+
+
+</div>
+  </body>
+</html>
